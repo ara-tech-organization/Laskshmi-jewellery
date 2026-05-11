@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SilverHeroImg from '../../assets/SilverHero.jpg';
+import SilverHeroImg from '../../assets/collections/silver/silver-gifts.png';
 
 const ACCENT = '#c4c2c1';
 const ACCENT_DARK = '#8A9098';

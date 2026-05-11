@@ -1,19 +1,27 @@
-import { useEffect, useRef } from 'react';
-import { Crown } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Crown, X } from 'lucide-react';
+import bridalTraditional from '../../assets/collections/bridal/bridal-traditional.png';
+import bridalTemple from '../../assets/collections/bridal/bridal-temple.png';
+import bridalDiamond from '../../assets/collections/bridal/bridal-diamond.png';
+import bridalPlatinum from '../../assets/collections/bridal/bridal-platinum.png';
+import bridalReception from '../../assets/collections/bridal/bridal-reception.png';
+import bridalCustomized from '../../assets/collections/bridal/bridal-customized.png';
 
 const GOLD = '#d4ad5a';
 
 const categories = [
-  { title: 'Traditional Bridal Jewellery', img: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=80' },
-  { title: 'Temple Jewellery',             img: 'https://images.unsplash.com/photo-1573408301185-9519f94815b5?w=500&q=80' },
-  { title: 'Diamond Bridal Collections',   img: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=80' },
-  { title: 'Platinum Couple Jewellery',    img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=80' },
-  { title: 'Reception Jewellery',          img: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=500&q=80' },
-  { title: 'Customized Bridal Sets',       img: 'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=500&q=80' },
+  { title: 'Traditional Bridal Jewellery', img: bridalTraditional },
+  { title: 'Temple Jewellery',             img: bridalTemple },
+  { title: 'Diamond Bridal Collections',   img: bridalDiamond },
+  { title: 'Platinum Couple Jewellery',    img: bridalPlatinum },
+  { title: 'Reception Jewellery',          img: bridalReception },
+  { title: 'Customized Bridal Sets',       img: bridalCustomized },
 ];
 
 export default function BridalCategories() {
   const ref = useRef(null);
+  const [modal, setModal] = useState(null);
+
   useEffect(() => {
     const els = ref.current?.querySelectorAll('.rb') ?? [];
     const obs = new IntersectionObserver(
@@ -52,26 +60,22 @@ export default function BridalCategories() {
         <div className="bridal-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '20px' }}>
           {categories.map(({ title, img }, i) => (
             <div key={title} className="rb" style={{ borderRadius: '18px', overflow: 'hidden', cursor: 'pointer', transition: 'all 0.35s ease', boxShadow: '0 4px 20px rgba(212,173,90,0.10)', border: '1px solid rgba(212,173,90,0.12)' }}
+              onClick={() => setModal({ img, title })}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = 'translateY(-6px)';
                 e.currentTarget.style.boxShadow = '0 8px 20px rgba(212,173,90,0.12)';
                 e.currentTarget.style.borderColor = 'rgba(212,173,90,0.35)';
                 const im = e.currentTarget.querySelector('img'); if (im) im.style.transform = 'scale(1.12)';
-                const ov = e.currentTarget.querySelector('.img-overlay'); if (ov) ov.style.opacity = '1';
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(212,173,90,0.10)';
                 e.currentTarget.style.borderColor = 'rgba(212,173,90,0.12)';
                 const im = e.currentTarget.querySelector('img'); if (im) im.style.transform = 'scale(1)';
-                const ov = e.currentTarget.querySelector('.img-overlay'); if (ov) ov.style.opacity = '0';
               }}>
               <div style={{ position: 'relative', height: '220px', overflow: 'hidden' }}>
                 <img src={img} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(26,18,8,0.72) 0%,transparent 55%)' }} />
-                <div className="img-overlay" style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(212,173,90,0.18)', opacity: 0, transition: 'opacity 0.35s ease', backdropFilter: 'blur(3px)' }}>
-                  <span style={{ color: '#fff', fontSize: '10px', fontWeight: '700', letterSpacing: '2.5px', textTransform: 'uppercase', border: '1px solid rgba(212,173,90,0.70)', padding: '7px 18px', borderRadius: '50px' }}>Explore</span>
-                </div>
                 <div style={{ position: 'absolute', top: '12px', left: '12px', fontSize: '10px', fontWeight: '700', color: GOLD, letterSpacing: '2px', textTransform: 'uppercase' }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
@@ -84,6 +88,21 @@ export default function BridalCategories() {
           ))}
         </div>
       </div>
+
+      {modal && (
+        <div onClick={() => setModal(null)} style={{ position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(10,6,2,0.88)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px', backdropFilter: 'blur(6px)' }}>
+          <div onClick={e => e.stopPropagation()} style={{ position: 'relative', maxWidth: '820px', width: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,0,0,0.55)', border: '1px solid rgba(212,173,90,0.25)' }}>
+            <img src={modal.img} alt={modal.title} style={{ width: '100%', display: 'block', maxHeight: '80vh', objectFit: 'contain', background: '#1a1208' }} />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '18px 22px', background: 'linear-gradient(to top,rgba(10,6,2,0.85),transparent)' }}>
+              <p style={{ margin: 0, color: '#fff', fontSize: '15px', fontWeight: '600', letterSpacing: '0.3px' }}>{modal.title}</p>
+            </div>
+            <button onClick={() => setModal(null)} style={{ position: 'absolute', top: '14px', right: '14px', width: '36px', height: '36px', borderRadius: '50%', background: 'rgba(10,6,2,0.70)', border: '1px solid rgba(212,173,90,0.40)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+              <X size={16} />
+            </button>
+          </div>
+        </div>
+      )}
+
       <style>{`
         @media (max-width: 960px) { .bridal-grid { grid-template-columns: repeat(2,1fr) !important; } }
         @media (max-width: 560px) { .bridal-grid { grid-template-columns: 1fr !important; } }

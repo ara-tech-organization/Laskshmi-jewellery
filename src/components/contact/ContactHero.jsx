@@ -1,4 +1,5 @@
 ﻿import { useEffect, useRef } from 'react';
+import ContactHeroImg from '../../assets/AboutStore.jpg';
 
 const GOLD = '#d4ad5a';
 
@@ -22,7 +23,7 @@ export default function ContactHero() {
 
   return (
     <section ref={ref} style={{ position: 'relative', height: '480px', overflow: 'hidden' }}>
-      <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1400&q=80" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
+      <img src={ContactHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(20,12,5,0.82) 0%,rgba(20,12,5,0.55) 55%,rgba(176,138,58,0.20) 100%)' }} />
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-opacity='0.06' stroke-width='1'%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Cpath d='M60 32 C68 44 68 76 60 88 C52 76 52 44 60 32Z'/%3E%3Cpath d='M32 60 C44 52 76 52 88 60 C76 68 44 68 32 60Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '120px 120px' }} />
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Shield, Star, Gift, CheckCircle } from 'lucide-react';
-import SilverHeroImg from '../../assets/SilverHero.jpg';
+import SilverHeroImg from '../../assets/collections/silver/silver-chains.png';
 
 const GOLD = '#d4ad5a';
 const GOLD_DARK = '#b08a3a';

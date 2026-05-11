@@ -1,6 +1,7 @@
 ﻿import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import BridalHeroImg from '../../assets/collections/bridal/bridal-traditional.png';
 
 const GOLD = '#d4ad5a';
 
@@ -24,7 +25,7 @@ export default function BridalHero() {
 
   return (
     <section ref={ref} style={{ position: 'relative', height: '560px', overflow: 'hidden' }}>
-      <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1400&q=80" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
+      <img src={BridalHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(20,12,5,0.85) 0%,rgba(20,12,5,0.58) 55%,rgba(176,138,58,0.20) 100%)' }} />
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-opacity='0.08' stroke-width='1'%3E%3Ccircle cx='50' cy='50' r='22'/%3E%3Cpath d='M50 28 C56 38 56 62 50 72 C44 62 44 38 50 28Z'/%3E%3Cpath d='M28 50 C38 44 62 44 72 50 C62 56 38 56 28 50Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '100px 100px' }} />
 
