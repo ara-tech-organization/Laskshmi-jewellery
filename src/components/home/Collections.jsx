@@ -1,12 +1,16 @@
 ﻿import { useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import goldImg     from '../../assets/collections/gold/gold-long-chain.png';
+import silverImg   from '../../assets/collections/silver/silver-anklets.png';
+import platinumImg from '../../assets/collections/platinum/platinum-wedding-bands.png';
+import diamondImg  from '../../assets/collections/diamond/diamond-necklaces.png';
 
 const collections = [
   {
     title: 'Gold Jewellery',
     desc: 'Traditional artistry crafted into timeless gold elegance.',
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80',
+    image: goldImg,
     tag: 'Most Popular',
     accent: '#d4ad5a',
     href: '/gold',
@@ -14,7 +18,7 @@ const collections = [
   {
     title: 'Silver Jewellery',
     desc: 'Elegant silver collections designed for tradition and gifting.',
-    image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80',
+    image: silverImg,
     tag: 'Gifting Favourite',
     accent: '#c4c2c1',
     href: '/silver',
@@ -22,7 +26,7 @@ const collections = [
   {
     title: 'Platinum Jewellery',
     desc: 'Minimal, sophisticated, and crafted for modern luxury.',
-    image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80',
+    image: platinumImg,
     tag: 'Modern Luxury',
     accent: '#c4c2c1',
     href: '/platinum',
@@ -30,7 +34,7 @@ const collections = [
   {
     title: 'Diamond Jewellery',
     desc: 'Brilliant diamond creations that radiate grace and sophistication.',
-    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80',
+    image: diamondImg,
     tag: 'Premium',
     accent: '#d4ad5a',
     href: '/diamond',

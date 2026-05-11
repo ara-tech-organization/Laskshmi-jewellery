@@ -1,7 +1,10 @@
 ﻿import { useEffect } from 'react';
 import { Check, ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import BridalBangles from '../../assets/BridalBangles.jpg';
+import BridalBangles    from '../../assets/BridalBangles.jpg';
+import bridalImg2       from '../../assets/collections/bridal/bridal-reception.png';
+import bridalImg3       from '../../assets/collections/bridal/bridal-customized.png';
+import bridalImg4       from '../../assets/collections/bridal/bridal-temple.png';
 
 const specialties = [
   'Grand Bridal Gold Sets',
@@ -13,8 +16,8 @@ const specialties = [
 ];
 
 const bridalImages = [
-  { src: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80', alt: 'Bridal Diamond Ring' },
-  { src: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80', alt: 'Bridal Pearl Necklace' },
+  { src: bridalImg2, alt: 'Bridal Reception Jewellery' },
+  { src: bridalImg3, alt: 'Customized Bridal Set' },
 ];
 
 export default function Bridal() {
@@ -146,8 +149,8 @@ export default function Bridal() {
               boxShadow:'0 12px 32px rgba(146,46,97,0.12)',
             }}>
               <img
-                src={BridalBangles}
-                alt="Bridal Gold Bangles"
+                src={bridalImg4}
+                alt="Bridal Temple Jewellery"
                 style={{ width:'100%', height:'100%', objectFit:'cover', transition:'transform 0.6s ease' }}
                 onMouseEnter={e => e.target.style.transform='scale(1.07)'}
                 onMouseLeave={e => e.target.style.transform='scale(1)'}
