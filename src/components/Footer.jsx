@@ -73,11 +73,11 @@ export default function Footer() {
             <div>
               <img
                 src={Logo}
-                alt="Sri Lakshimi Thanga Maligai"
+                alt="Sri Lakshmi Thanga Maaligai"
                 style={{ height: '64px', width: 'auto', marginBottom: '24px', filter: 'drop-shadow(0 2px 10px rgba(212,173,90,0.35))' }}
               />
               <p style={{ fontSize: '14px', lineHeight: '1.95', color: 'rgba(196,194,193,0.75)', marginBottom: '20px', maxWidth: '260px' }}>
-                Sri Lakshimi Thanga Maligai is a trusted jewellery destination offering premium gold, silver, platinum, and diamond jewellery crafted with purity, elegance, and timeless craftsmanship.
+                Sri Lakshmi Thanga Maaligai is a trusted jewellery destination offering premium gold, silver, platinum, and diamond jewellery crafted with purity, elegance, and timeless craftsmanship.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function Footer() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
 
             <p style={{ fontFamily: "'Poppins',sans-serif", fontSize: '12px', color: 'rgba(255,255,255,0.55)', margin: 0, fontWeight: '400' }}>
-              &copy; {new Date().getFullYear()} Sri Lakshimi Thanga Maligai. All rights reserved.
+              &copy; {new Date().getFullYear()} Sri Lakshmi Thanga Maaligai. All rights reserved.
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>

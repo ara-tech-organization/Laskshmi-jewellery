@@ -65,7 +65,7 @@ export default function BridalIntro() {
             <h2 className="rb" style={{ fontSize: 'clamp(26px,3vw,42px)', fontWeight: '700', color: GOLD, lineHeight: '1.2', letterSpacing: '-0.5px', marginBottom: '28px' }}>Tradition &amp; Beauty</h2>
             <div className="rb" style={{ width: 48, height: 3, background: 'linear-gradient(to right,#d4ad5a,rgba(212,173,90,0.2))', borderRadius: '2px', marginBottom: '28px' }} />
             <p className="rb" style={{ fontSize: '15px', lineHeight: '1.95', color: '#5A4F3F', marginBottom: '16px' }}>
-              A bride's jewellery reflects tradition, beauty, and emotion. At Sri Lakshimi Thanga Maligai, we create bridal collections that complete every wedding story with elegance and grandeur.
+              A bride's jewellery reflects tradition, beauty, and emotion. At Sri Lakshmi Thanga Maaligai, we create bridal collections that complete every wedding story with elegance and grandeur.
             </p>
             <p className="rb" style={{ fontSize: '15px', lineHeight: '1.95', color: '#5A4F3F', marginBottom: '36px' }}>
               Our bridal specialists help brides choose jewellery that perfectly complements their attire, personality, and wedding traditions — making every wedding unforgettable.

@@ -20,7 +20,7 @@ const collections = [
     desc: 'Elegant silver collections designed for tradition and gifting.',
     image: silverImg,
     tag: 'Gifting Favourite',
-    accent: '#c4c2c1',
+    accent: '#d4ad5a',
     href: '/silver',
   },
   {
@@ -28,7 +28,7 @@ const collections = [
     desc: 'Minimal, sophisticated, and crafted for modern luxury.',
     image: platinumImg,
     tag: 'Modern Luxury',
-    accent: '#c4c2c1',
+    accent: '#d4ad5a',
     href: '/platinum',
   },
   {
@@ -136,13 +136,14 @@ export default function Collections() {
               <div style={{
                 position:'absolute', top:'20px', left:'20px',
                 padding:'6px 14px',
-                background:`${col.accent}22`,
-                border:`1px solid ${col.accent}44`,
+                background:'#d4ad5a',
+                border:'1px solid #b08a3a',
                 borderRadius:'50px',
                 fontFamily:"'Poppins',sans-serif",
-                fontSize:'11px', fontWeight:'600',
-                color: col.accent,
+                fontSize:'11px', fontWeight:'700',
+                color: '#1a1208',
                 letterSpacing:'1px', textTransform:'uppercase',
+                boxShadow:'0 2px 8px rgba(0,0,0,0.18)',
               }}>
                 {col.tag}
               </div>

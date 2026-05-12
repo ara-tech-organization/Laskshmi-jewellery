@@ -6,7 +6,7 @@ const testimonials = [
     name: 'Priya Krishnamurthy',
     role: 'Bride, Chennai',
     initials: 'PK',
-    review: 'The bridal set I got from Sri Lakshimi Thanga Maligai was beyond my expectations. Every piece was crafted beautifully and the staff guided me with so much warmth. My wedding looked absolutely magical.',
+    review: 'The bridal set I got from Sri Lakshmi Thanga Maaligai was beyond my expectations. Every piece was crafted beautifully and the staff guided me with so much warmth. My wedding looked absolutely magical.',
     rating: 5,
   },
   {
@@ -149,7 +149,7 @@ export default function Testimonials() {
               key={t.name + i}
               style={{
                 background: i === 1
-                  ? 'linear-gradient(135deg,#14161A 0%,#1E2028 100%)'
+                  ? 'linear-gradient(135deg,#d4ad5a 0%,#b08a3a 100%)'
                   : '#FFFFFF',
                 border: i === 1
                   ? '1px solid rgba(212,173,90,0.30)'
@@ -200,7 +200,7 @@ export default function Testimonials() {
               <p style={{
                 fontFamily: "'Poppins',sans-serif",
                 fontSize: '14px', lineHeight: '1.85',
-                color: i === 1 ? 'rgba(255,255,255,0.80)' : '#5A4F3F',
+                color: i === 1 ? 'rgba(255,255,255,0.92)' : '#5A4F3F',
                 margin: 0,
                 flex: 1,
               }}>
@@ -215,7 +215,7 @@ export default function Testimonials() {
                 <Avatar initials={t.initials} size={44} />
                 <div>
                   <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: '14px', fontWeight: '600', color: i === 1 ? '#FFFFFF' : '#1A1610', marginBottom: '2px' }}>{t.name}</div>
-                  <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: '12px', color: i === 1 ? '#922e61' : '#8A7A60' }}>{t.role}</div>
+                  <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: '12px', color: i === 1 ? 'rgba(255,255,255,0.75)' : '#8A7A60' }}>{t.role}</div>
                 </div>
               </div>
             </div>

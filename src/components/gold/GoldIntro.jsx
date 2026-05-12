@@ -64,7 +64,7 @@ export default function GoldIntro() {
             <h2 className="rg" style={{ fontSize: 'clamp(26px,3vw,42px)', fontWeight: '700', color: '#d4ad5a', lineHeight: '1.2', letterSpacing: '-0.5px', marginBottom: '28px' }}>Timeless Elegance</h2>
             <div className="rg" style={{ width: 48, height: 3, background: 'linear-gradient(to right,#d4ad5a,rgba(212,173,90,0.15))', borderRadius: '2px', marginBottom: '28px' }} />
             <p className="rg" style={{ fontSize: '15px', lineHeight: '1.95', color: '#5A4F3F', marginBottom: '18px' }}>
-              Gold jewellery has always symbolized prosperity, tradition, and timeless beauty. At Sri Lakshimi Thanga Maligai, our gold collections are thoughtfully designed to preserve cultural elegance while embracing contemporary fashion trends.
+              Gold jewellery has always symbolized prosperity, tradition, and timeless beauty. At Sri Lakshmi Thanga Maaligai, our gold collections are thoughtfully designed to preserve cultural elegance while embracing contemporary fashion trends.
             </p>
             <p className="rg" style={{ fontSize: '15px', lineHeight: '1.95', color: '#5A4F3F', marginBottom: '36px' }}>
               Every piece is crafted with precision, intricate detailing, and premium finishing to create jewellery that becomes part of your family legacy.

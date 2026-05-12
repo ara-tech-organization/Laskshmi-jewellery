@@ -106,7 +106,7 @@ export default function LuxuryIntro() {
               color:'#5A4F3F',
               marginBottom:'16px',
             }}>
-              At Sri Lakshimi Thanga Maligai, every ornament tells a story of beauty, craftsmanship, and tradition. For generations, we have been creating jewellery that becomes part of life's most cherished moments — weddings, celebrations, achievements, and family traditions.
+              At Sri Lakshmi Thanga Maaligai, every ornament tells a story of beauty, craftsmanship, and tradition. For generations, we have been creating jewellery that becomes part of life's most cherished moments — weddings, celebrations, achievements, and family traditions.
             </p>
             <p className="reveal-intro" style={{
               fontFamily:"'Poppins',sans-serif",

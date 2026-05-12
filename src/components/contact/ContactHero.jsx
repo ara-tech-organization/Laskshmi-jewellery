@@ -37,7 +37,7 @@ export default function ContactHero() {
           <span style={{ color: GOLD }}>Timeless Elegance</span>
         </h1>
         <p className="rc" style={{ fontSize: '15px', lineHeight: '1.9', color: 'rgba(255,255,255,0.65)', maxWidth: '520px', margin: 0 }}>
-          Step into Sri Lakshimi Thanga Maligai and experience premium jewellery collections crafted with beauty, trust, and tradition. Our team is ready to help you find the perfect jewellery for every occasion.
+          Step into Sri Lakshmi Thanga Maaligai and experience premium jewellery collections crafted with beauty, trust, and tradition. Our team is ready to help you find the perfect jewellery for every occasion.
         </p>
       </div>
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top,#FAF6EE,transparent)' }} />

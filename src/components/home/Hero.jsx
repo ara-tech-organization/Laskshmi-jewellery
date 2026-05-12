@@ -1,4 +1,4 @@
-﻿import { ArrowRight, MapPin, Shield, Star } from 'lucide-react';
+﻿import { ArrowRight, Shield, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HeroImage from '../../assets/Hero2.png';
 
@@ -75,17 +75,6 @@ export default function Hero() {
             <a href="#collections" className="btn-primary" style={{ padding:'13px 30px', fontSize:'14px' }}>
               Explore Collections <ArrowRight size={15} />
             </a>
-            <Link to="/contact" style={{
-              display:'inline-flex', alignItems:'center', gap:'8px',
-              padding:'12px 28px', fontSize:'14px', fontFamily:"'Poppins',sans-serif", fontWeight:'500',
-              border:'1.5px solid rgba(26,18,8,0.35)', borderRadius:'50px',
-              color:'#1a1208', textDecoration:'none', transition:'all 0.3s ease',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor='#d4ad5a'; e.currentTarget.style.color='#d4ad5a'; }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(26,18,8,0.35)'; e.currentTarget.style.color='#1a1208'; }}
-            >
-              <MapPin size={14} color="#d4ad5a" /> Book Store Visit
-            </Link>
           </div>
 
           {/* Stats */}

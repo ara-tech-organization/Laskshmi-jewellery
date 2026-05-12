@@ -69,7 +69,7 @@ export default function Navbar() {
         <div className="nav-inner" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%', padding:'0 48px' }}>
           {/* Logo */}
           <Link to="/" onClick={() => { setMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} style={{ display:'flex', alignItems:'center', gap:'12px', textDecoration:'none' }}>
-            <img src={Logo} alt="Sri Lakshimi Thanga Maligai" style={{
+            <img src={Logo} alt="Sri Lakshmi Thanga Maaligai" style={{
               height: '56px',
               width: 'auto',
               transition: 'all 0.4s ease',
