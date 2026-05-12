@@ -250,6 +250,12 @@ body {
   .bridal-sub-img  { height: 110px !important; }
 }
 
+/* ── Contact hero phone height ── */
+@media (max-width: 768px) {
+  .contact-hero { height: 40vh !important; min-height: 400px !important; }
+  .contact-hero .container { padding-top: 80px !important; }
+}
+
 /* ── Contact map height ── */
 @media (max-width: 640px) { .contact-map-wrap { height: 300px !important; } }
 @media (max-width: 375px) { .contact-map-wrap { height: 260px !important; } }
