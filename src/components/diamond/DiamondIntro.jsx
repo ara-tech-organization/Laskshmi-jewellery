@@ -38,15 +38,15 @@ export default function DiamondIntro() {
           <div className="rd" style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', inset: '-12px', border: '1px solid rgba(212,173,90,0.20)', borderRadius: '36px', pointerEvents: 'none' }} />
             <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 28px 72px rgba(10,14,22,0.14)', position: 'relative' }}>
-              <img src={DiamondHeroImg} alt="Diamond Jewellery" style={{ width: '100%', height: '500px', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+              <img src={DiamondHeroImg} alt="Diamond Jewellery" className="intro-img" style={{ width: '100%', height: '500px', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(10,14,22,0.50) 0%,transparent 55%)', pointerEvents: 'none' }} />
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(to right,#d4ad5a,transparent)' }} />
             </div>
-            <div style={{ position: 'absolute', bottom: '-20px', left: '32px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', borderRadius: '18px', padding: '18px 24px', boxShadow: '0 6px 18px rgba(212,173,90,0.16)' }}>
+            <div className="intro-badge-b" style={{ position: 'absolute', bottom: '-20px', left: '32px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', borderRadius: '18px', padding: '18px 24px', boxShadow: '0 6px 18px rgba(212,173,90,0.16)' }}>
               <div style={{ fontSize: '36px', fontWeight: '800', color: '#fff', lineHeight: 1 }}>GIA</div>
               <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.85)', marginTop: '3px', letterSpacing: '1.5px', textTransform: 'uppercase' }}>Certified</div>
             </div>
-            <div style={{ position: 'absolute', top: '24px', right: '-16px', background: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(12px)', border: '1px solid rgba(212,173,90,0.22)', borderRadius: '14px', padding: '14px 18px', boxShadow: '0 8px 28px rgba(10,14,22,0.10)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div className="intro-badge-r" style={{ position: 'absolute', top: '24px', right: '-16px', background: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(12px)', border: '1px solid rgba(212,173,90,0.22)', borderRadius: '14px', padding: '14px 18px', boxShadow: '0 8px 28px rgba(10,14,22,0.10)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Shield size={14} color={GOLD} />
               <div>
                 <div style={{ fontSize: '12px', fontWeight: '700', color: '#1A1610' }}>Conflict-Free</div>

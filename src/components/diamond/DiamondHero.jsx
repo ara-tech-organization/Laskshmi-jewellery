@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import DiamondHeroImg from '../../assets/DiamondHero.jpg';
+import DiamondHeroImg from '../../assets/collections/diamond/diamond-earrings.png';
 
 const GOLD = '#d4ad5a';
 
@@ -24,12 +24,12 @@ export default function DiamondHero() {
   }, []);
 
   return (
-    <section ref={ref} style={{ position: 'relative', height: '560px', overflow: 'hidden' }}>
-      <img src={DiamondHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(20,12,5,0.82) 0%,rgba(20,12,5,0.55) 55%,rgba(176,138,58,0.20) 100%)' }} />
+    <section ref={ref} className="hero-fixed" style={{ position: 'relative', height: '560px', overflow: 'hidden', marginBottom: '48px' }}>
+      <img src={DiamondHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.30)' }} />
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-opacity='0.07' stroke-width='1'%3E%3Ccircle cx='50' cy='50' r='22'/%3E%3Cpath d='M50 28 C56 38 56 62 50 72 C44 62 44 38 50 28Z'/%3E%3Cpath d='M28 50 C38 44 62 44 72 50 C62 56 38 56 28 50Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '100px 100px' }} />
 
-      <div className="container" style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '80px' }}>
+      <div className="container" style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '80px', paddingBottom: '20px', overflow: 'hidden' }}>
         <div className="rd" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(212,173,90,0.15)', border: '1px solid rgba(212,173,90,0.50)', borderRadius: '50px', marginBottom: '22px', width: 'fit-content' }}>
           <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#d4ad5a', display: 'block' }} />
           <span style={{ fontSize: '11px', fontWeight: '600', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#d4ad5a' }}>Diamond Collections</span>
@@ -51,7 +51,7 @@ export default function DiamondHero() {
           </Link>
         </div>
       </div>
-      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top,#FAF6EE,transparent)' }} />
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: 'linear-gradient(to top,rgba(250,246,238,0.45),transparent)' }} />
     </section>
   );
 }

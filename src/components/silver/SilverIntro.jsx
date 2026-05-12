@@ -39,15 +39,15 @@ export default function SilverIntro() {
           <div className="rs" style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', inset: '-12px', border: '1px solid rgba(212,173,90,0.20)', borderRadius: '36px', pointerEvents: 'none' }} />
             <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 28px 72px rgba(20,12,5,0.14)', position: 'relative' }}>
-              <img src={SilverHeroImg} alt="Silver Jewellery" style={{ width: '100%', height: '500px', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
+              <img src={SilverHeroImg} alt="Silver Jewellery" className="intro-img" style={{ width: '100%', height: '500px', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(20,12,5,0.50) 0%,transparent 55%)', pointerEvents: 'none' }} />
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: `linear-gradient(to right,${GOLD},transparent)` }} />
             </div>
-            <div style={{ position: 'absolute', bottom: '-20px', left: '32px', background: `linear-gradient(135deg,${GOLD},${GOLD_DARK})`, borderRadius: '18px', padding: '18px 24px', boxShadow: '0 6px 18px rgba(212,173,90,0.18)' }}>
+            <div className="intro-badge-b" style={{ position: 'absolute', bottom: '-20px', left: '32px', background: `linear-gradient(135deg,${GOLD},${GOLD_DARK})`, borderRadius: '18px', padding: '18px 24px', boxShadow: '0 6px 18px rgba(212,173,90,0.18)' }}>
               <div style={{ fontSize: '36px', fontWeight: '800', color: '#fff', lineHeight: 1 }}>92.5</div>
               <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.85)', marginTop: '3px', letterSpacing: '1.5px', textTransform: 'uppercase' }}>Pure Silver</div>
             </div>
-            <div style={{ position: 'absolute', top: '24px', right: '-16px', background: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(12px)', border: '1px solid rgba(212,173,90,0.22)', borderRadius: '14px', padding: '14px 18px', boxShadow: '0 8px 28px rgba(20,12,5,0.10)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div className="intro-badge-r" style={{ position: 'absolute', top: '24px', right: '-16px', background: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(12px)', border: '1px solid rgba(212,173,90,0.22)', borderRadius: '14px', padding: '14px 18px', boxShadow: '0 8px 28px rgba(20,12,5,0.10)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Shield size={14} color={GOLD} />
               <div>
                 <div style={{ fontSize: '12px', fontWeight: '700', color: '#1A1610' }}>Hallmarked</div>

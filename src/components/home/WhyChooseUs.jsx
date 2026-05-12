@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
   }, []);
 
   return (
-    <section style={{ background: '#FAF6EE', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="why-section" style={{ background: '#FAF6EE', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
       {/* Floral SVG background pattern */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0,
@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* ── Two-column layout: big feature left + cards right ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', alignItems: 'start' }}>
+        <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', alignItems: 'start' }}>
 
           {/* Left — large highlight card */}
           <div className="reveal-why" style={{
@@ -131,7 +131,7 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Right — 4 smaller reason cards in 2×2 */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+          <div className="why-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
             {reasons.slice(1).map(({ icon: Icon, title, desc, color }, i) => (
               <div
                 key={title}
@@ -179,10 +179,10 @@ export default function WhyChooseUs() {
 
       <style>{`
         @media (max-width: 900px) {
-          #why-section > .container > div:last-child { grid-template-columns: 1fr !important; }
+          .why-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 640px) {
-          #why-section > .container > div:last-child > div:last-child { grid-template-columns: 1fr !important; }
+          .why-cards { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>

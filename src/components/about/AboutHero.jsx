@@ -21,17 +21,17 @@ export default function AboutHero() {
   }, []);
 
   return (
-    <section ref={ref} style={{ position:'relative', height:'100vh', minHeight:'680px', display:'flex', alignItems:'center', justifyContent:'center', overflow:'hidden' }}>
+    <section ref={ref} className="about-hero-section" style={{ position:'relative', height:'100vh', minHeight:'680px', display:'flex', alignItems:'center', justifyContent:'center', overflow:'hidden' }}>
 
       {/* Background image */}
-      <img src={AboutImage} alt="" style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top' }} />
+      <img src={AboutImage} alt="" style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top', minHeight:'100%' }} />
 
       {/* Overlays */}
       <div style={{ position:'absolute', inset:0, background:'linear-gradient(to bottom, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.72) 100%)' }} />
       <div style={{ position:'absolute', inset:0, background:'rgba(146,46,97,0.30)' }} />
 
       {/* Centered content */}
-      <div className="container" style={{ position:'relative', zIndex:2, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', padding:'120px 24px 80px' }}>
+      <div className="container about-hero-content" style={{ position:'relative', zIndex:2, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', padding:'120px 24px 80px' }}>
 
         {/* Badge */}
         <div className="ra" style={{ display:'inline-flex', alignItems:'center', gap:'10px', padding:'8px 22px', background:'rgba(212,173,90,0.15)', border:'1px solid rgba(212,173,90,0.50)', borderRadius:'50px', marginBottom:'28px' }}>
@@ -63,7 +63,7 @@ export default function AboutHero() {
         </p>
 
         {/* Stats row */}
-        <div className="ra" style={{ display:'flex', gap:0, marginBottom:'36px', borderTop:'1px solid rgba(212,173,90,0.15)', borderBottom:'1px solid rgba(212,173,90,0.15)', padding:'18px 0', width:'100%', maxWidth:'640px' }}>
+        <div className="ra about-stats" style={{ display:'flex', gap:0, marginBottom:'36px', borderTop:'1px solid rgba(212,173,90,0.15)', borderBottom:'1px solid rgba(212,173,90,0.15)', padding:'18px 0', width:'100%', maxWidth:'640px' }}>
           {[['50+','Years of Legacy'],['10K+','Happy Families'],['5K+','Unique Designs'],['100%','BIS Certified']].map(([n, l], i) => (
             <div key={l} style={{ flex:1, textAlign:'center', borderRight: i < 3 ? '1px solid rgba(212,173,90,0.15)' : 'none' }}>
               <div style={{ fontSize:'clamp(20px,2.2vw,30px)', fontWeight:'800', color:'#d4ad5a', lineHeight:1, fontFamily:"'Poppins',sans-serif" }}>{n}</div>

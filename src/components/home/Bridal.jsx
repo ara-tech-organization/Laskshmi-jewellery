@@ -100,7 +100,7 @@ export default function Bridal() {
 
           {/* Right — Image Grid */}
           <div className="reveal-bridal" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gridTemplateRows:'auto auto', gap:'16px' }}>
-            <div style={{
+            <div className="bridal-top-img" style={{
               gridColumn:'1 / -1',
               borderRadius:'20px', overflow:'hidden',
               height:'260px',
@@ -115,7 +115,7 @@ export default function Bridal() {
               />
             </div>
             {bridalImages.slice(0, 2).map(img => (
-              <div key={img.src} style={{
+              <div key={img.src} className="bridal-sub-img" style={{
                 borderRadius:'16px', overflow:'hidden',
                 height:'180px',
                 boxShadow:'0 12px 32px rgba(146,46,97,0.12)',
@@ -143,7 +143,7 @@ export default function Bridal() {
               <div style={{ fontFamily:"'Poppins',sans-serif", fontSize:'12px', fontWeight:'500', color:'rgba(255,255,255,0.7)', textAlign:'center', padding:'0 12px', lineHeight:'1.5' }}>Custom Bridal Solutions</div>
             </div>
             {/* 5th — extra bridal image */}
-            <div style={{
+            <div className="bridal-sub-img" style={{
               borderRadius:'16px', overflow:'hidden',
               height:'180px',
               boxShadow:'0 12px 32px rgba(146,46,97,0.12)',

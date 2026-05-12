@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import PlatinumHeroImg from '../../assets/PlatinumHero.jpg';
+import PlatinumHeroImg from '../../assets/collections/platinum/platinum-engagement.png';
 
 const ACCENT = '#D8D8D8';
 const ACCENT_DARK = '#A0A0A0';
@@ -25,7 +25,7 @@ export default function PlatinumHero() {
   }, []);
 
   return (
-    <section ref={ref} style={{ position: 'relative', height: '560px', overflow: 'hidden' }}>
+    <section ref={ref} className="hero-fixed" style={{ position: 'relative', height: '560px', overflow: 'hidden', marginBottom: '48px' }}>
       <img src={PlatinumHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(20,12,5,0.82) 0%,rgba(20,12,5,0.55) 55%,rgba(176,138,58,0.20) 100%)' }} />
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23D8D8D8' stroke-opacity='0.07' stroke-width='1'%3E%3Ccircle cx='50' cy='50' r='22'/%3E%3Cpath d='M50 28 C56 38 56 62 50 72 C44 62 44 38 50 28Z'/%3E%3Cpath d='M28 50 C38 44 62 44 72 50 C62 56 38 56 28 50Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '100px 100px' }} />
@@ -52,7 +52,7 @@ export default function PlatinumHero() {
           </Link>
         </div>
       </div>
-      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top,#FAF6EE,transparent)' }} />
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '60px', background: 'linear-gradient(to top,rgba(250,246,238,0.45),transparent)' }} />
     </section>
   );
 }

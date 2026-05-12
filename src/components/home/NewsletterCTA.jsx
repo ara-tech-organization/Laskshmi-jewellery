@@ -47,7 +47,7 @@ export default function NewsletterCTA() {
       <div style={{ position: 'absolute', bottom: '-100px', left: '-100px', width: '300px', height: '300px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(212,173,90,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+        <div className="nl-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
 
           {/* Left — CTA Text */}
           <div>
@@ -184,7 +184,7 @@ export default function NewsletterCTA() {
 
       <style>{`
         @media (max-width: 900px) {
-          section .container > div { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .nl-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
         }
         input::placeholder { color: rgba(255,255,255,0.25) !important; }
       `}</style>

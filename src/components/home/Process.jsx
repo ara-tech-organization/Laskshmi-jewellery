@@ -47,7 +47,7 @@ export default function Process() {
   }, []);
 
   return (
-    <section style={{ background: 'linear-gradient(135deg,#14161A 0%,#1E2028 50%,#14161A 100%)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="process-section" style={{ background: 'linear-gradient(135deg,#14161A 0%,#1E2028 50%,#14161A 100%)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
       {/* Floral tile pattern */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0,
@@ -70,9 +70,9 @@ export default function Process() {
         </div>
 
         {/* Steps */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '0', position: 'relative' }}>
+        <div className="process-steps" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '0', position: 'relative' }}>
           {/* Connector line */}
-          <div style={{
+          <div className="process-connector" style={{
             position: 'absolute',
             top: '48px', left: '12.5%', right: '12.5%',
             height: '1px',
@@ -146,14 +146,14 @@ export default function Process() {
 
       <style>{`
         @media (max-width: 768px) {
-          section .container > div:last-child {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 40px !important;
-          }
-          section .container > div:last-child > div::before { display: none; }
+          #process-section .process-steps { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
+          #process-section .process-connector { display: none !important; }
         }
         @media (max-width: 480px) {
-          section .container > div:last-child { grid-template-columns: 1fr !important; }
+          #process-section .process-steps { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 375px) {
+          #process-section .process-steps { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>

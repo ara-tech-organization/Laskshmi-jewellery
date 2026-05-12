@@ -28,7 +28,7 @@ export default function LuxuryIntro() {
   return (
     <section id="about" style={{ background:'#FAF6EE', padding:'100px 0', overflow:'hidden' }}>
       <div className="container">
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center' }}>
+        <div className="intro-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center' }}>
           {/* Left — Images Mosaic */}
           <div className="reveal-intro" style={{ position:'relative', height:'560px' }}>
             <div style={{
@@ -163,8 +163,8 @@ export default function LuxuryIntro() {
       <style>{`
         @keyframes rotateGlow { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
         @media (max-width: 900px) {
-          #about .container > div { grid-template-columns: 1fr !important; gap: 40px !important; }
-          #about .container > div > div:first-child { height: 300px !important; }
+          .intro-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .intro-grid > div:first-child { height: 320px !important; }
         }
       `}</style>
     </section>
