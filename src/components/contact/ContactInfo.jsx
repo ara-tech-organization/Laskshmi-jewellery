@@ -49,7 +49,7 @@ export default function ContactInfo() {
   );
 
   return (
-    <section ref={ref} style={{ background: '#F5F5F8', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="contact-info" ref={ref} style={{ background: '#F5F5F8', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="rc" style={{ textAlign: 'center', marginBottom: '64px' }}>
           <div style={{ fontSize: '11px', fontWeight: '600', color: GOLD, letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Reach Us</div>

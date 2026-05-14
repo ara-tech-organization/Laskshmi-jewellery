@@ -72,7 +72,7 @@ export default function Hero() {
 
           {/* Buttons */}
           <div style={{ display:'flex', gap:'14px', flexWrap:'wrap', marginBottom:'40px', animation:'fadeUp 0.6s ease 0.24s both' }}>
-            <a href="#collections" className="btn-primary" style={{ padding:'13px 30px', fontSize:'14px' }}>
+            <a href="#" onClick={e => { e.preventDefault(); document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' }); }} className="btn-primary" style={{ padding:'13px 30px', fontSize:'14px' }}>
               Explore Collections <ArrowRight size={15} />
             </a>
           </div>

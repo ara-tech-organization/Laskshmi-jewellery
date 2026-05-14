@@ -11,7 +11,7 @@ export default function ContactMap() {
           </div>
           <h3 style={{ fontSize: '20px', fontWeight: '700', color: '#FFFFFF', margin: '0 0 8px' }}>Find Us on Google Maps</h3>
           <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.45)', margin: '0 0 24px' }}>123, Gold Bazaar Street, Chennai, Tamil Nadu — 600001</p>
-          <a href="#" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontSize: '14px', fontWeight: '600', boxShadow: '0 3px 12px rgba(212,173,90,0.18)', transition: 'all 0.3s ease' }}
+          <a href="https://www.google.com/maps/search/Sri+Lakshmi+Thanga+Maaligai+Kumbakonam" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontSize: '14px', fontWeight: '600', boxShadow: '0 3px 12px rgba(212,173,90,0.18)', transition: 'all 0.3s ease' }}
             onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 5px 16px rgba(212,173,90,0.20)'; }}
             onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 3px 12px rgba(212,173,90,0.18)'; }}>
             Get Directions <ArrowRight size={15} />

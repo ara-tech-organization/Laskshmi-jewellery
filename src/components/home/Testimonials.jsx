@@ -100,7 +100,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section style={{ background: '#FAF6EE', padding: '100px 0', overflow: 'hidden' }}>
+    <section id="testimonials" style={{ background: '#FAF6EE', padding: '100px 0', overflow: 'hidden' }}>
       <div className="container">
 
         {/* ── Header ── */}

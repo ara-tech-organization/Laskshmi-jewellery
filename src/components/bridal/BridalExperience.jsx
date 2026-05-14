@@ -1,4 +1,5 @@
 ﻿import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
 
 const GOLD = '#d4ad5a';
@@ -29,7 +30,7 @@ export default function BridalExperience() {
   }, []);
 
   return (
-    <section ref={ref} style={{ background: 'linear-gradient(135deg,#14161A 0%,#1E2028 50%,#14161A 100%)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
+    <section id="bridal-experience" ref={ref} style={{ background: 'linear-gradient(135deg,#14161A 0%,#1E2028 50%,#14161A 100%)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-opacity='0.04' stroke-width='1'%3E%3Ccircle cx='70' cy='70' r='32'/%3E%3Cpath d='M70 38 C80 52 80 88 70 102 C60 88 60 52 70 38Z'/%3E%3Cpath d='M38 70 C52 60 88 60 102 70 C88 80 52 80 38 70Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '140px 140px' }} />
       <div style={{ position: 'absolute', top: '-80px', left: '50%', transform: 'translateX(-50%)', width: '600px', height: '600px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(212,173,90,0.07) 0%,transparent 70%)', pointerEvents: 'none' }} />
 
@@ -66,11 +67,11 @@ export default function BridalExperience() {
         </div>
 
         <div className="rb" style={{ textAlign: 'center', marginTop: '56px' }}>
-          <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 36px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontSize: '15px', fontWeight: '600', boxShadow: '0 4px 14px rgba(212,173,90,0.18)', transition: 'all 0.3s ease' }}
+          <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 36px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontSize: '15px', fontWeight: '600', boxShadow: '0 4px 14px rgba(212,173,90,0.18)', transition: 'all 0.3s ease' }}
             onMouseEnter={e => { e.currentTarget.style.transform='translateY(-3px)'; e.currentTarget.style.boxShadow='0 6px 18px rgba(212,173,90,0.20)'; }}
             onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 4px 14px rgba(212,173,90,0.18)'; }}>
             Book Bridal Consultation <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </div>
       <style>{`
