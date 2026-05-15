@@ -53,7 +53,7 @@ const footerLinks = {
 const contactItems = [
   { icon: MapPin, text: '111, Sarangapani East Street, Kumbakonam — 612001' },
   { icon: Phone,  text: '+91 79046 35051' },
-  { icon: Mail,   text: 'contact@sltm.in' },
+  { icon: Mail,   text: 'srilakshmithangamaaligai@gmail.com' },
   { icon: Clock,  text: 'Mon – Sat: 10:00 AM – 9:00 PM' },
 ];
 

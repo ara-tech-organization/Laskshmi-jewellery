@@ -7,7 +7,7 @@ const contactInfo = [
   { icon: MapPin,        label: 'Store Address',    value: '111, Sarangapani East Street, Kumbakonam — 612001',    sub: 'Visit us in store',         href: null },
   { icon: Phone,         label: 'Phone Number',     value: '+91 79046 35051',                                        sub: 'Call us anytime',           href: 'tel:+917904635051' },
   { icon: MessageCircle, label: 'WhatsApp Support', value: '+91 79046 35051',                                        sub: 'Chat with us on WhatsApp',  href: 'https://wa.me/917904635051' },
-  { icon: Mail,          label: 'Email Address',    value: 'contact@sltm.in',                                        sub: 'Send us an email',          href: 'mailto:contact@sltm.in' },
+  { icon: Mail,          label: 'Email Address',    value: 'srilakshmithangamaaligai@gmail.com',                     sub: 'Send us an email',          href: 'mailto:srilakshmithangamaaligai@gmail.com' },
   { icon: Map,           label: 'Google Maps',      value: 'Find Us on Google Maps',                                 sub: 'Get directions to our store', href: 'https://www.google.com/maps/search/111+Sarangapani+East+Street+Kumbakonam+612001' },
   { icon: Clock,         label: 'Business Hours',   value: 'Mon – Sat: 10:00 AM – 9:00 PM',                         sub: 'Sunday: 11:00 AM – 7:00 PM', href: null },
 ];
