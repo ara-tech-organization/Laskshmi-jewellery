@@ -23,7 +23,7 @@ const WhatsAppIcon = () => (
 const socials = [
   { icon: InstagramIcon, href: 'https://www.instagram.com/slt_kumbakonam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', label: 'Instagram' },
   { icon: FacebookIcon,  href: 'https://www.facebook.com/profile.php?id=61589154564849', label: 'Facebook'  },
-  { icon: WhatsAppIcon,  href: 'https://wa.me/919999999999', label: 'WhatsApp'  },
+  { icon: WhatsAppIcon,  href: 'https://wa.me/917904635051', label: 'WhatsApp'  },
 ];
 
 const footerLinks = {
@@ -51,8 +51,8 @@ const footerLinks = {
 };
 
 const contactItems = [
-  { icon: MapPin, text: '123, Gold Bazaar Street, Chennai, Tamil Nadu — 600001' },
-  { icon: Phone,  text: '+91 99999 99999' },
+  { icon: MapPin, text: '111, Sarangapani East Street, Kumbakonam — 612001' },
+  { icon: Phone,  text: '+91 79046 35051' },
   { icon: Mail,   text: 'contact@sltm.in' },
   { icon: Clock,  text: 'Mon – Sat: 10:00 AM – 9:00 PM' },
 ];

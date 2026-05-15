@@ -123,7 +123,7 @@ export default function Navbar() {
 
           {/* CTA + Hamburger */}
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
-            <a href="tel:+919999999999" style={{
+            <a href="tel:+917904635051" style={{
               display: 'flex',
               alignItems: 'center',
               gap: '6px',

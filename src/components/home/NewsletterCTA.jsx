@@ -68,8 +68,8 @@ export default function NewsletterCTA() {
             {/* Quick contact links */}
             <div className="reveal-nl" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
-                { icon: Phone,  text: '+91 99999 99999', label: 'Call Us',     href: 'tel:+919999999999' },
-                { icon: MapPin, text: 'Gold Bazaar Street, Chennai', label: 'Visit Store', href: '/contact' },
+                { icon: Phone,  text: '+91 79046 35051', label: 'Call Us',     href: 'tel:+917904635051' },
+                { icon: MapPin, text: 'Sarangapani East Street, Kumbakonam', label: 'Visit Store', href: '/contact' },
               ].map(({ icon: Icon, text, label, href }) => {
                 const isExternal = href.startsWith('tel:') || href.startsWith('http');
                 const inner = (
