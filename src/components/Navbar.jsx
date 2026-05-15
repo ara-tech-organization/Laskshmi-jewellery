@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Platinum',          href: '/platinum' },
   { label: 'Diamond',           href: '/diamond' },
   { label: 'Bridal Collection', href: '/bridal' },
+  { label: 'Career',            href: '/career' },
   { label: 'Contact',           href: '/contact' },
 ];
 
@@ -78,14 +79,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <ul style={{ display:'flex', alignItems:'center', gap:'20px', listStyle:'none', margin:0 }} className="desktop-nav">
+          <ul style={{ display:'flex', alignItems:'center', gap:'18px', listStyle:'none', margin:0 }} className="desktop-nav">
             {navLinks.map(link => {
               const active = isActive(link.href);
               const linkStyle = {
                 display: 'block',
-                padding: '9px 20px',
+                padding: '7px 12px',
                 fontFamily: "'Poppins', sans-serif",
-                fontSize: '15px',
+                fontSize: '13px',
                 fontWeight: '500',
                 color: active ? '#c4c2c1' : '#FFFFFF',
                 textDecoration: 'none',

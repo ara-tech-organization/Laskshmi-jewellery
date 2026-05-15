@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import goldImg     from '../../assets/collections/gold/gold-long-chain.png';
-import silverImg   from '../../assets/collections/silver/silver-anklets.png';
+import silverImg   from '../../assets/collections/silver/silver-bracelets.png';
 import platinumImg from '../../assets/collections/platinum/platinum-wedding-bands.png';
 import diamondImg  from '../../assets/collections/diamond/diamond-necklaces.png';
 

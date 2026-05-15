@@ -5,4 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Laskshmi-jewellery/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://srilakshmithangamaaligai.com',
+        changeOrigin: true,
+        secure: true,
+      },
+    },
+  },
 })

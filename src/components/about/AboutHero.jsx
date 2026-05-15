@@ -64,7 +64,7 @@ export default function AboutHero() {
 
         {/* Stats row */}
         <div className="ra about-stats" style={{ display:'flex', gap:0, marginBottom:'36px', borderTop:'1px solid rgba(212,173,90,0.15)', borderBottom:'1px solid rgba(212,173,90,0.15)', padding:'18px 0', width:'100%', maxWidth:'640px' }}>
-          {[['50+','Years of Legacy'],['10K+','Happy Families'],['5K+','Unique Designs'],['100%','BIS Certified']].map(([n, l], i) => (
+          {[['50+','Years of Legacy'],['25K+','Happy Families'],['5K+','Unique Designs'],['100%','BIS Certified']].map(([n, l], i) => (
             <div key={l} style={{ flex:1, textAlign:'center', borderRight: i < 3 ? '1px solid rgba(212,173,90,0.15)' : 'none' }}>
               <div style={{ fontSize:'clamp(20px,2.2vw,30px)', fontWeight:'800', color:'#d4ad5a', lineHeight:1, fontFamily:"'Poppins',sans-serif" }}>{n}</div>
               <div style={{ fontSize:'10px', color:'rgba(255,255,255,0.40)', marginTop:'6px', letterSpacing:'1px', textTransform:'uppercase' }}>{l}</div>

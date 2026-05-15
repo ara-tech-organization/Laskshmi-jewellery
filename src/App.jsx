@@ -10,7 +10,10 @@ import Silver from './pages/Silver';
 import Platinum from './pages/Platinum';
 import Diamond from './pages/Diamond';
 import Bridal from './pages/Bridal';
+import Career from './pages/Career';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 export default function App() {
   return (
@@ -24,7 +27,10 @@ export default function App() {
         <Route path="/platinum" element={<Platinum />} />
         <Route path="/diamond" element={<Diamond />} />
         <Route path="/bridal" element={<Bridal />} />
+        <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
       <Footer />
     </BrowserRouter>

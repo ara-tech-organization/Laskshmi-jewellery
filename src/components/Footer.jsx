@@ -54,10 +54,13 @@ const contactItems = [
   { icon: MapPin, text: '111, Sarangapani East Street, Kumbakonam — 612001' },
   { icon: Phone,  text: '+91 79046 35051' },
   { icon: Mail,   text: 'srilakshmithangamaaligai@gmail.com' },
-  { icon: Clock,  text: 'Mon – Sat: 10:00 AM – 9:00 PM' },
+  { icon: Clock,  text: 'Mon – Sun: 9:30 AM – 9:00 PM' },
 ];
 
-const legalLinks = ['Privacy Policy', 'Terms of Service', 'Sitemap'];
+const legalLinks = [
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Terms of Service', href: '/terms-of-service' },
+];
 
 export default function Footer() {
   return (
@@ -158,16 +161,16 @@ export default function Footer() {
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {legalLinks.map((item, i) => (
-                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <a
-                    href="#"
+              {legalLinks.map(({ label, href }, i) => (
+                <span key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Link
+                    to={href}
                     style={{ fontFamily: "'Poppins',sans-serif", fontSize: '12px', color: '#c4c2c1', textDecoration: 'none', transition: 'color 0.3s ease' }}
-                    onMouseEnter={e => e.target.style.color = '#d4ad5a'}
-                    onMouseLeave={e => e.target.style.color = '#c4c2c1'}
+                    onMouseEnter={e => e.currentTarget.style.color = '#d4ad5a'}
+                    onMouseLeave={e => e.currentTarget.style.color = '#c4c2c1'}
                   >
-                    {item}
-                  </a>
+                    {label}
+                  </Link>
                   {i < legalLinks.length - 1 && (
                     <span style={{ color: 'rgba(196,194,193,0.30)', fontSize: '12px' }}>|</span>
                   )}

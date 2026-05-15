@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
 
             {/* Stats row */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1px', background: 'rgba(212,173,90,0.12)', borderRadius: '16px', overflow: 'hidden' }}>
-              {[['25+','Years'], ['10K+','Families'], ['5K+','Designs']].map(([num, label]) => (
+              {[['50+','Years'], ['25K+','Families'], ['5K+','Designs']].map(([num, label]) => (
                 <div key={label} style={{ padding: '20px 16px', background: 'rgba(146,46,97,0.8)', textAlign: 'center' }}>
                   <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: '24px', fontWeight: '600', color: '#d4ad5a', lineHeight: 1 }}>{num}</div>
                   <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: '11px', color: 'rgba(255,255,255,0.45)', marginTop: '4px', letterSpacing: '0.5px' }}>{label}</div>
