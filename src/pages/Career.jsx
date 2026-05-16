@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 import { User, Mail, Phone, Briefcase, FileText, Send, Upload, CheckCircle } from 'lucide-react';
 
 const GOLD = '#d4ad5a';
@@ -58,30 +59,24 @@ export default function Career() {
     setLoading(true);
     setApiError('');
     try {
-      const fd = new FormData();
-      fd.append('firstName',   form.firstName);
-      fd.append('lastName',    form.lastName);
-      fd.append('email',       form.email);
-      fd.append('phone',       form.phone);
-      fd.append('position',    form.position);
-      fd.append('experience',  form.experience);
-      fd.append('description', form.description);
-      fd.append('source',      'Website Career Page');
-      if (resume) fd.append('resume', resume);
-
-      const url = import.meta.env.DEV
-        ? '/api/career-apply.php'
-        : 'https://srilakshmithangamaaligai.com/api/career-apply.php';
-      const res = await fetch(url, { method: 'POST', body: fd });
-      const data = await res.json();
-
-      if (data.success) {
-        setSubmitted(true);
-      } else {
-        setApiError(data.message || 'Submission failed. Please try again.');
-      }
+      await emailjs.send(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        {
+          first_name:  form.firstName,
+          last_name:   form.lastName,
+          email:       form.email,
+          phone:       form.phone,
+          position:    form.position,
+          experience:  form.experience,
+          description: form.description || 'Not provided',
+          resume_name: resume ? resume.name : 'No resume uploaded',
+        },
+        'YOUR_PUBLIC_KEY',
+      );
+      setSubmitted(true);
     } catch {
-      setApiError('Network error. Please check your connection and try again.');
+      setApiError('Failed to send application. Please try again or contact us directly.');
     } finally {
       setLoading(false);
     }
