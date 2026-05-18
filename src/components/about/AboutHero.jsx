@@ -28,7 +28,7 @@ export default function AboutHero() {
 
       {/* Overlays */}
       <div style={{ position:'absolute', inset:0, background:'linear-gradient(to bottom, rgba(10,8,4,0.55) 0%, rgba(10,8,4,0.72) 100%)' }} />
-      <div style={{ position:'absolute', inset:0, background:'rgba(146,46,97,0.30)' }} />
+      <div style={{ position:'absolute', inset:0, background:'rgba(212,173,90,0.12)' }} />
 
       {/* Centered content */}
       <div className="container about-hero-content" style={{ position:'relative', zIndex:2, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', padding:'120px 24px 80px' }}>

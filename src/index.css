@@ -4,23 +4,23 @@
   --gold: #d4ad5a;
   --gold-light: #eabf6a;
   --gold-dark: #b08a3a;
-  --gold-pale: #f9e5f2;
+  --gold-pale: #fdf0cc;
   --silver: #c4c2c1;
   --silver-light: #dddcdc;
   --silver-dark: #a09e9d;
-  --cream: #fdf0f7;
-  --dark: #922e61;
-  --dark-2: #7a2451;
-  --dark-3: #5e1a40;
-  --text: #4a1e35;
-  --text-light: #7a4565;
+  --cream: #faf6ed;
+  --dark: #7a5c20;
+  --dark-2: #5e4518;
+  --dark-3: #4a3410;
+  --text: #2d1f0a;
+  --text-light: #6b5020;
   --white: #FFFFFF;
   --font: 'Poppins', sans-serif;
   --radius: 12px;
   --radius-lg: 20px;
   --shadow-gold: 0 8px 32px rgba(212,173,90,0.18);
-  --shadow-card: 0 4px 24px rgba(146,46,97,0.10);
-  --shadow-hover: 0 16px 48px rgba(146,46,97,0.16);
+  --shadow-card: 0 4px 24px rgba(176,138,58,0.12);
+  --shadow-hover: 0 16px 48px rgba(176,138,58,0.20);
   --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -62,7 +62,7 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #922e61;
+  color: #b08a3a;
   margin-bottom: 16px;
 }
 .section-tag::before, .section-tag::after {
@@ -70,7 +70,7 @@ body {
   display: block;
   width: 24px;
   height: 1px;
-  background: #922e61;
+  background: #b08a3a;
 }
 
 .btn-primary {

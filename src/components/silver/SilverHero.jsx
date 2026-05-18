@@ -1,23 +1,25 @@
-﻿import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import SilverHeroImg from '../../assets/collections/silver/silver-gifts.png';
-
-const ACCENT = '#c4c2c1';
-const ACCENT_DARK = '#8A9098';
+import SilverHeroImg from '../../assets/silver hero.png';
 
 export default function SilverHero() {
   const ref = useRef(null);
   useEffect(() => {
     const els = ref.current?.querySelectorAll('.rs') ?? [];
     const obs = new IntersectionObserver(
-      entries => entries.forEach(e => {
-        if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
-      }),
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+          }
+        }),
       { threshold: 0.07 }
     );
     els.forEach((el, i) => {
-      el.style.opacity = '0'; el.style.transform = 'translateY(28px)';
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(28px)';
       el.style.transition = `all 0.75s cubic-bezier(0.4,0,0.2,1) ${i * 0.1}s`;
       obs.observe(el);
     });
@@ -25,34 +27,126 @@ export default function SilverHero() {
   }, []);
 
   return (
-    <section ref={ref} className="hero-fixed" style={{ position: 'relative', height: '560px', overflow: 'hidden', marginBottom: '48px' }}>
-      <img src={SilverHeroImg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(20,12,5,0.82) 0%,rgba(20,12,5,0.55) 55%,rgba(176,138,58,0.20) 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23B0B7C3' stroke-opacity='0.07' stroke-width='1'%3E%3Ccircle cx='50' cy='50' r='22'/%3E%3Cpath d='M50 28 C56 38 56 62 50 72 C44 62 44 38 50 28Z'/%3E%3Cpath d='M28 50 C38 44 62 44 72 50 C62 56 38 56 28 50Z'/%3E%3C/g%3E%3C/svg%3E")`, backgroundSize: '100px 100px' }} />
+    <section
+      ref={ref}
+      className="hero-fixed"
+      style={{ position: 'relative', height: '620px', overflow: 'hidden' }}
+    >
+      <img
+        src={SilverHeroImg}
+        alt=""
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+      />
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.18)' }} />
 
-      <div className="container" style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '80px' }}>
-        <div className="rs" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(212,173,90,0.15)', border: '1px solid rgba(212,173,90,0.50)', borderRadius: '50px', marginBottom: '22px', width: 'fit-content' }}>
-          <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#d4ad5a', display: 'block' }} />
-          <span style={{ fontSize: '11px', fontWeight: '600', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#d4ad5a' }}>Silver Collections</span>
+      <div
+        className="container"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          zIndex: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          paddingTop: '120px',
+          paddingBottom: '40px',
+        }}
+      >
+        <div
+          className="rs"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '6px 16px',
+            background: 'rgba(146,46,97,0.20)',
+            border: '1px solid rgba(146,46,97,0.70)',
+            borderRadius: '50px',
+            marginBottom: '22px',
+            width: 'fit-content',
+          }}
+        >
+          <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#922e61', display: 'block' }} />
+          <span style={{ fontSize: '11px', fontWeight: '600', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#922e61' }}>
+            Silver Collections
+          </span>
         </div>
-        <h1 className="rs" style={{ fontSize: 'clamp(22px,2.8vw,40px)', fontWeight: '700', color: '#FFFFFF', lineHeight: '1.2', letterSpacing: '-0.5px', maxWidth: '640px', margin: '0 0 24px' }}>
-          Elegant Silver Jewellery<br />
-          <span style={{ color: '#c4c2c1' }}>with Artistic Perfection</span>
+        <h1
+          className="rs"
+          style={{
+            fontSize: 'clamp(22px,2.8vw,38px)',
+            fontWeight: '700',
+            color: '#1a1a1a',
+            lineHeight: '1.2',
+            letterSpacing: '-0.5px',
+            maxWidth: '620px',
+            margin: '0 0 24px',
+          }}
+        >
+          Elegant Silver Jewellery
+          <br />
+          <span style={{ color: '#922e61' }}>with Artistic Perfection</span>
         </h1>
         <div className="rs" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          <a href="#" onClick={e => { e.preventDefault(); document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' }); }} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'linear-gradient(135deg,#d4ad5a,#b08a3a)', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontSize: '14px', fontWeight: '600', boxShadow: '0 3px 12px rgba(212,173,90,0.18)', transition: 'all 0.3s ease' }}
-            onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 5px 16px rgba(212,173,90,0.20)'; }}
-            onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 3px 12px rgba(212,173,90,0.18)'; }}>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '12px 28px',
+              background: 'linear-gradient(135deg,#922e61,#7a2451)',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: '50px',
+              fontSize: '14px',
+              fontWeight: '600',
+              boxShadow: '0 3px 12px rgba(146,46,97,0.30)',
+              transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = '0 5px 16px rgba(146,46,97,0.40)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 3px 12px rgba(146,46,97,0.30)';
+            }}
+          >
             View Collections <ArrowRight size={15} />
           </a>
-          <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '11px 26px', border: '1.5px solid rgba(212,173,90,0.45)', color: '#FFFFFF', textDecoration: 'none', borderRadius: '50px', fontSize: '14px', fontWeight: '500', transition: 'all 0.3s ease' }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor='#d4ad5a'; e.currentTarget.style.color='#d4ad5a'; }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(212,173,90,0.45)'; e.currentTarget.style.color='#FFFFFF'; }}>
+          <Link
+            to="/contact"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '11px 26px',
+              border: '1.5px solid rgba(146,46,97,0.60)',
+              color: '#1a1a1a',
+              textDecoration: 'none',
+              borderRadius: '50px',
+              fontSize: '14px',
+              fontWeight: '500',
+              transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#922e61';
+              e.currentTarget.style.color = '#922e61';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(146,46,97,0.60)';
+              e.currentTarget.style.color = '#1a1a1a';
+            }}
+          >
             Book Consultation
           </Link>
         </div>
       </div>
-      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '100px', background: 'linear-gradient(to top,#FAF6EE,transparent)' }} />
     </section>
   );
 }

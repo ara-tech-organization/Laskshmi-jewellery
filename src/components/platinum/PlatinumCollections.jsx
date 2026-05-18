@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Sparkles, X } from 'lucide-react';
 
-import imgCoupleRings   from '../../assets/collections/platinum/platinum-couple-rings.jpg';
+import imgCoupleRings   from '../../assets/collections/platinum/platinum-couple-rings.png';
 import imgEngagement    from '../../assets/collections/platinum/platinum-engagement.png';
 import imgWeddingBands  from '../../assets/collections/platinum/platinum-wedding-bands.png';
 import imgChains        from '../../assets/collections/platinum/platinum-chains.png';
@@ -94,8 +94,8 @@ export default function PlatinumCollections() {
                   e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.30)';
                   const im = e.currentTarget.querySelector('img'); if (im) im.style.transform = 'scale(1)';
                 }}>
-                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
-                  <img src={img} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} />
+                <div style={{ position: 'relative', aspectRatio: '1', overflow: 'hidden' }}>
+                  <img src={img} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.5s ease' }} />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(17,19,24,0.75) 0%,transparent 60%)' }} />
                   <div style={{ position: 'absolute', top: '12px', left: '12px', fontSize: '10px', fontWeight: '700', color: ACCENT, letterSpacing: '2px', textTransform: 'uppercase' }}>
                     {String(i + 1).padStart(2, '0')}
