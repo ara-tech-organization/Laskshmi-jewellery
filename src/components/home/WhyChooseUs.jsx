@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '56px', flexWrap: 'wrap', gap: '24px' }}>
           <div>
             <div className="section-tag reveal-why">Why Choose Us</div>
-            <h2 className="reveal-why" style={{ fontFamily: "'Poppins',sans-serif", fontSize: 'clamp(28px,3vw,44px)', fontWeight: '600', color: '#1A1610', margin: 0 }}>
+            <h2 className="reveal-why" style={{ fontFamily: "'Poppins',sans-serif", fontSize: 'clamp(22px,2.2vw,34px)', fontWeight: '600', color: '#1A1610', margin: 0 }}>
               Why Families Trust{' '}
               <span style={{ color: '#d4ad5a' }}>Sri Lakshmi Thanga Maaligai</span>
             </h2>

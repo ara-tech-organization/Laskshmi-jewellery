@@ -99,11 +99,11 @@ export default function Bridal() {
           </div>
 
           {/* Right — Image Grid */}
-          <div className="reveal-bridal" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gridTemplateRows:'auto auto', gap:'16px' }}>
+          <div className="reveal-bridal" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', alignItems:'start' }}>
             <div className="bridal-top-img" style={{
               gridColumn:'1 / -1',
               borderRadius:'20px', overflow:'hidden',
-              height:'260px',
+              aspectRatio:'16/7',
               boxShadow:'0 16px 48px rgba(146,46,97,0.15)',
             }}>
               <img
@@ -117,13 +117,12 @@ export default function Bridal() {
             {bridalImages.slice(0, 2).map(img => (
               <div key={img.src} className="bridal-sub-img" style={{
                 borderRadius:'16px', overflow:'hidden',
-                height:'180px',
                 boxShadow:'0 12px 32px rgba(146,46,97,0.12)',
               }}>
                 <img
                   src={img.src}
                   alt={img.alt}
-                  style={{ width:'100%', height:'100%', objectFit:'cover', transition:'transform 0.6s ease' }}
+                  style={{ width:'100%', height:'auto', display:'block', transition:'transform 0.6s ease' }}
                   onMouseEnter={e => e.target.style.transform='scale(1.07)'}
                   onMouseLeave={e => e.target.style.transform='scale(1)'}
                 />
@@ -133,7 +132,7 @@ export default function Bridal() {
             <div style={{
               display:'flex', alignItems:'center', justifyContent:'center',
               borderRadius:'16px',
-              height:'180px',
+              aspectRatio:'4/3',
               background:'linear-gradient(135deg,#922e61,#7a2451)',
               border:'1px solid rgba(212,173,90,0.2)',
               flexDirection:'column', gap:'8px',
@@ -145,13 +144,12 @@ export default function Bridal() {
             {/* 5th — extra bridal image */}
             <div className="bridal-sub-img" style={{
               borderRadius:'16px', overflow:'hidden',
-              height:'180px',
               boxShadow:'0 12px 32px rgba(146,46,97,0.12)',
             }}>
               <img
                 src={bridalImg4}
                 alt="Bridal Temple Jewellery"
-                style={{ width:'100%', height:'100%', objectFit:'cover', transition:'transform 0.6s ease' }}
+                style={{ width:'100%', height:'auto', display:'block', transition:'transform 0.6s ease' }}
                 onMouseEnter={e => e.target.style.transform='scale(1.07)'}
                 onMouseLeave={e => e.target.style.transform='scale(1)'}
               />

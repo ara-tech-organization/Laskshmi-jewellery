@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import AboutImage from '../../assets/AboutStore.jpg';
+import AboutImage from '../../assets/collections/gold/gold-antique.png';
 
 export default function AboutHero() {
   const ref = useRef(null);
@@ -31,7 +31,7 @@ export default function AboutHero() {
       <div style={{ position:'absolute', inset:0, background:'rgba(212,173,90,0.12)' }} />
 
       {/* Centered content */}
-      <div className="container about-hero-content" style={{ position:'relative', zIndex:2, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', padding:'120px 24px 80px' }}>
+      <div className="container about-hero-content" style={{ position:'relative', zIndex:2, display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', padding:'160px 24px 80px' }}>
 
         {/* Badge */}
         <div className="ra" style={{ display:'inline-flex', alignItems:'center', gap:'10px', padding:'8px 22px', background:'rgba(212,173,90,0.15)', border:'1px solid rgba(212,173,90,0.50)', borderRadius:'50px', marginBottom:'28px' }}>
@@ -42,10 +42,10 @@ export default function AboutHero() {
 
         {/* Headline */}
         <div className="ra" style={{ marginBottom:'20px' }}>
-          <h1 style={{ margin:0, fontFamily:"'Poppins',sans-serif", fontSize:'clamp(32px,4.5vw,64px)', fontWeight:'700', lineHeight:'1.12', letterSpacing:'-1px', color:'#FFFFFF' }}>
+          <h1 style={{ margin:0, fontFamily:"'Poppins',sans-serif", fontSize:'clamp(26px,3.8vw,52px)', fontWeight:'700', lineHeight:'1.12', letterSpacing:'-1px', color:'#FFFFFF' }}>
             A Legacy Built on
           </h1>
-          <h1 style={{ margin:0, fontFamily:"'Poppins',sans-serif", fontSize:'clamp(32px,4.5vw,64px)', fontWeight:'700', lineHeight:'1.12', letterSpacing:'-1px', background:'linear-gradient(135deg,#d4ad5a 0%,#E8D08A 50%,#b08a3a 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text', paddingBottom:'6px' }}>
+          <h1 style={{ margin:0, fontFamily:"'Poppins',sans-serif", fontSize:'clamp(26px,3.8vw,52px)', fontWeight:'700', lineHeight:'1.12', letterSpacing:'-1px', background:'linear-gradient(135deg,#d4ad5a 0%,#E8D08A 50%,#b08a3a 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text', paddingBottom:'6px' }}>
             Trust, Craftsmanship &amp; Elegance
           </h1>
         </div>

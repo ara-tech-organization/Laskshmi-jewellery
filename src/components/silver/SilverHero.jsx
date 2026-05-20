@@ -30,12 +30,12 @@ export default function SilverHero() {
     <section
       ref={ref}
       className="hero-fixed"
-      style={{ position: 'relative', height: '620px', overflow: 'hidden' }}
+      style={{ position: 'relative' }}
     >
       <img
         src={SilverHeroImg}
         alt=""
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+        style={{ width: '100%', height: 'auto', display: 'block' }}
       />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.18)' }} />
 

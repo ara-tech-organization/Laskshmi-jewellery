@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import GoldHeroImg from "../../assets/GoldIntro.png";
+import GoldHeroImg from "../../assets/Goldhero.png";
 
 export default function GoldHero() {
   const ref = useRef(null);
@@ -32,29 +32,20 @@ export default function GoldHero() {
       className="hero-fixed"
       style={{
         position: "relative",
-        height: "620px",
-        overflow: "hidden",
       }}
     >
       <img
         src={GoldHeroImg}
         alt=""
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center",
-        }}
+        style={{ width: "100%", height: "auto", display: "block" }}
       />
       <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.18)" }} />
       <div
         className="container"
         style={{
-          position: "relative",
+          position: "absolute",
+          inset: 0,
           zIndex: 2,
-          height: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -182,17 +173,6 @@ export default function GoldHero() {
           </Link>
         </div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: "60px",
-          background:
-            "linear-gradient(to top,rgba(250,246,238,0.45),transparent)",
-        }}
-      />
     </section>
   );
 }

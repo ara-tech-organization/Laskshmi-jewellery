@@ -75,7 +75,6 @@ export default function BridalCategories() {
               }}>
               <div style={{ position: 'relative', aspectRatio: '1', overflow: 'hidden' }}>
                 <img src={img} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.5s ease' }} />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(26,18,8,0.72) 0%,transparent 55%)' }} />
                 <div style={{ position: 'absolute', top: '12px', left: '12px', fontSize: '10px', fontWeight: '700', color: GOLD, letterSpacing: '2px', textTransform: 'uppercase' }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
